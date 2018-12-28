@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <h1>Services</h1>
+    <% @services.each do |service| %>
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail">
+          <%= link_to image_tag(service.photo_url), service_path(service) %>
+          <div class="caption">
+            <h3><%= link_to service.name, service_path(service) %></h3>
+            <p><%= service.category.name %></p>
+            <p>$$$</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
