@@ -1,20 +1,28 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-12">
-      <h1><%= @service.name %></h1>
+      <h1 class="headers"><%= @service.name %></h1>
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-12 col-md-6">
-      <%= image_tag(@service.photo_url, width: '100%') %>
+
+    <div class="col-sm-12 col-md-4 col-md-offset-4">
+      <div class="thumbnail">
+        <%= image_tag(@service.photo_url, width: '88%') %>
+
+        <div class="caption">
+          <div class="test">
+            <p><%= image_tag "ic_info_48px.svg", height: 16 %></p>
+            <p><span><%= @service.description %></span></p>
+          </div>
+          <p><%= image_tag "ic_euro_symbol_48px.svg", height: 16 %> <%= humanized_money(@service.price) %></p>
+          <%= form_tag bookings_path do %>
+          <%= hidden_field_tag 'service_id', @service.id %>
+          <%= submit_tag 'Purchase', class: 'btn btn-primary' %>
+          <% end %>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-12 col-md-6">
-      <p><%= @service.description %></p>
-      <p>Amount: <%= humanized_money_with_symbol(@service.price) %></p>
-      <%= form_tag bookings_path do %>
-      <%= hidden_field_tag 'service_id', @service.id %>
-      <%= submit_tag 'Purchase', class: 'btn btn-primary' %>
-      <% end %>
-    </div>
+
   </div>
 </div>
