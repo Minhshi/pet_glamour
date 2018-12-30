@@ -9,6 +9,7 @@
             <h2><%= link_to service.name, service_path(service) %></h2>
             <p><%= image_tag "ic_pets_48px.svg", height: 16 %> <%= service.category.name %></p>
             <p><%= image_tag "ic_euro_symbol_48px.svg", height: 16 %> <%= humanized_money(service.price) %></p>
+            <%= button_to "See more", service_path(service), class: "btn btn-primary button-1", :method => :get %>
           </div>
         </div>
       </div>
