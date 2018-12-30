@@ -1,9 +1,13 @@
 .thumbnail {
   background-color: white;
+  text-transform: capitalize;
   img {
   margin-top: 16px;
   }
 }
 .caption {
   margin-left: 10px;
+  img {
+    margin-top: 0px !important;
+  }
 }
