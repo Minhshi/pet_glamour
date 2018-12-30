@@ -16,10 +16,15 @@
             <p><span><%= @service.description %></span></p>
           </div>
           <p><%= image_tag "ic_euro_symbol_48px.svg", height: 16 %> <%= humanized_money(@service.price) %></p>
+
+          <div class="test">
           <%= form_tag bookings_path do %>
           <%= hidden_field_tag 'service_id', @service.id %>
-          <%= submit_tag 'Purchase', class: 'btn btn-primary' %>
+          <%= submit_tag 'Book now', class: 'btn btn-primary button-1' %>
           <% end %>
+
+         <%= button_to "Go back", services_path, class: "btn btn-primary button-2", :method => :get %>
+         </div>
         </div>
       </div>
     </div>
