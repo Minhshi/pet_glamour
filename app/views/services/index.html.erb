@@ -7,8 +7,8 @@
           <%= link_to image_tag(service.photo_url), service_path(service) %>
           <div class="caption">
             <h2><%= link_to service.name, service_path(service) %></h2>
-            <p><%= service.category.name %></p>
-            <p>Amount: <%= humanized_money_with_symbol(service.price) %></p>
+            <p><%= image_tag "ic_pets_48px.svg", height: 16 %> <%= service.category.name %></p>
+            <p><%= image_tag "ic_euro_symbol_48px.svg", height: 16 %> <%= humanized_money(service.price) %></p>
           </div>
         </div>
       </div>
