@@ -1,23 +1,21 @@
 <div class="container">
-  <h1 class="headers">Booking</h1>
-
-
   <div class="row">
+    <h1 class="headers">Booking was successful for</h1>
+    <h2 class="headers"><%= @booking.service_name %></h2>
+
+
     <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
       <div class="thumbnail">
+        <%= image_tag(@booking.service_photo, width: '88%') %>
+        <div class="caption">
+          <p><%= image_tag "ic_sentiment_satisfied_48px.svg", height: 16 %> <%= @booking.state %></p>
+          <p><%= image_tag "ic_euro_symbol_48px.svg", height: 16 %> <%= humanized_money(@booking.amount) %></p>
 
-
-        <ul>
-           <%= image_tag(@booking.service_photo, width: '88%') %>
-
-        <li>Status: <%= @booking.state %></li>
-        <li>Service: <%= @booking.service_name %></li>
-        <li>Price: <%= humanized_money_with_symbol(@booking.amount) %></li>
-  <ul>
         </div>
       </div>
     </div>
 
 
   </div>
+</div>
 
