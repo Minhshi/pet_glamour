@@ -4,7 +4,7 @@
     <% @services.each do |service| %>
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-          <%= link_to image_tag(service.photo_url), service_path(service) %>
+          <%= link_to image_tag(service.photo_url, class: "img-hover"), service_path(service) %>
           <div class="caption">
             <h2><%= link_to service.name, service_path(service) %></h2>
             <p><%= image_tag "ic_pets_48px.svg", height: 16 %> <%= service.category.name %></p>
