@@ -1,0 +1,32 @@
+
+<div class="container">
+  <div class="row">
+    <h1 class="headers">Bookings</h1>
+
+    <% @bookings.each do |b| %>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <%= image_tag(b.service_photo, width: '88%') %>
+
+        <div class="caption">
+          <h2><%= link_to b.service_name, booking_path(b) %></h2>
+          <p><%= image_tag "ic_pets_48px.svg", height: 16 %> <%= b.state %></p>
+          <p><%= image_tag "ic_euro_symbol_48px.svg", height: 16 %> <%= humanized_money(b.amount) %></p>
+
+        <div class="test">
+          <%= button_to "See details", booking_path(b), class: "btn btn-primary button-1", :method => :get %>
+          <% if b.state == "pending" %>
+          <%= button_to "Pay now", booking_path(b), class: "btn btn-primary button-2", :method => :get %>
+          <% end %>
+        </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  <% end %>
+
+
+</div>
+</div>
