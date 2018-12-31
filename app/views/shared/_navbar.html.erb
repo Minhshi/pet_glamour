@@ -10,18 +10,18 @@
     <% if user_signed_in? %>
 
       <!-- Links when logged in -->
-      <%= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Trips", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Messages", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "Services", "/services", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "Bookings", "/bookings", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%#= link_to "Messages", "#", class: "navbar-wagon-item navbar-wagon-link" %>
 
       <!-- Avatar with dropdown menu -->
       <div class="navbar-wagon-item">
         <div class="dropdown">
-          <%= image_tag "http://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+          <%= image_tag "bear-2.svg", class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
             <li>
-              <%= link_to "#" do %>
-                <i class="fa fa-user"></i> <%= t(".profile", default: "Profile") %>
+              <%= link_to profile_path do %>
+                <%= image_tag("single-01.svg", height: 16) %> <%= "Profile" %>
               <% end %>
             </li>
             <li>
@@ -49,9 +49,9 @@
       <!-- <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i> -->
       <%= image_tag "ic_menu_48px.svg", height: 48, class: "dropdown-toggle", "data-toggle" => "dropdown"  %>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="#">Some mobile link</a></li>
-        <li><a href="#">Other one</a></li>
-        <li><a href="#">Other one</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Bookings</a></li>
+        <!-- <li><a href="#">Other one</a></li> -->
       </ul>
     </div>
   </div>
