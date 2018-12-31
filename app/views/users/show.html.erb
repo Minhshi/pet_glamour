@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <h1 class="headers">Account</h1>
+    <div class="col-sm-12 col-md-4 col-md-offset-4">
+      <div class="thumbnail">
+        <%= image_tag("bear-2.svg", width: '24%') %>
+        <div class="caption">
+        <p class="profile-text-style"> <%= image_tag("email-84.svg", height: 16 ) %>
+
+          <%= current_user.email %>
+
+        </p>
+        <p>
+          <%= image_tag("calendar-60.svg", height: 16 ) %>
+          <%= current_user.created_at.strftime("%B %Y") %> <span class="profile-text-style">(joined)</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
