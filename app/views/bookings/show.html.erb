@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <h1 class="headers">Booking was successful for</h1>
+    <h1 class="headers">Booking for</h1>
     <h2 class="headers"><%= @booking.service_name %></h2>
 
 
@@ -8,9 +8,13 @@
       <div class="thumbnail">
         <%= image_tag(@booking.service_photo, width: '88%') %>
         <div class="caption">
+          <% if @booking.state == "paid" %>
           <p><%= image_tag "ic_sentiment_satisfied_48px.svg", height: 16 %> <%= @booking.state %></p>
+            <% else %>
+          <p><%= image_tag "ic_sentiment_neutral_48px.svg", height: 16 %> <%= @booking.state %></p>
+          <% end %>
           <p><%= image_tag "ic_euro_symbol_48px.svg", height: 16 %> <%= humanized_money(@booking.amount) %></p>
-
+          <%= button_to "See bookings", bookings_path, class: "btn btn-primary button-1", :method => :get %>
         </div>
       </div>
     </div>

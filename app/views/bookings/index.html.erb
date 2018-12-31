@@ -10,13 +10,17 @@
 
         <div class="caption">
           <h2><%= link_to b.service_name, booking_path(b) %></h2>
-          <p><%= image_tag "ic_pets_48px.svg", height: 16 %> <%= b.state %></p>
+          <% if b.state == "paid" %>
+          <p><%= image_tag "ic_sentiment_satisfied_48px.svg", height: 16 %> <%= b.state %></p>
+            <% else %>
+          <p><%= image_tag "ic_sentiment_neutral_48px.svg", height: 16 %> <%= b.state %></p>
+          <% end %>
           <p><%= image_tag "ic_euro_symbol_48px.svg", height: 16 %> <%= humanized_money(b.amount) %></p>
 
         <div class="test">
           <%= button_to "See details", booking_path(b), class: "btn btn-primary button-1", :method => :get %>
           <% if b.state == "pending" %>
-          <%= button_to "Pay now", booking_path(b), class: "btn btn-primary button-2", :method => :get %>
+          <%= button_to "Pay now", new_booking_payment_path(b), class: "btn btn-primary button-2", :method => :get %>
           <% end %>
         </div>
         </div>

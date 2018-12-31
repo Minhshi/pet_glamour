@@ -10,6 +10,11 @@
         <div class="caption">
 
           <%= form_tag booking_payments_path(@booking) do %>
+          <% if @booking.state == "paid" %>
+          <p><%= image_tag "ic_sentiment_satisfied_48px.svg", height: 16 %> <%= @booking.state %></p>
+            <% else %>
+          <p><%= image_tag "ic_sentiment_neutral_48px.svg", height: 16 %> <%= @booking.state %></p>
+          <% end %>
           <article>
             <label class="amount">
               <span><%= image_tag "ic_euro_symbol_48px.svg", height: 16 %> <%= humanized_money(@booking.amount) %></span>
