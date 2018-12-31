@@ -1,6 +1,11 @@
 <div class="container">
   <div class="row">
-    <h1 class="headers">Booking for</h1>
+    <% if @booking.state == "paid" %>
+
+    <h1 class="headers"> <%= image_tag "check-circle-07.svg", height: 30, class: "icon-confirm" %>Booking made</h1>
+    <% else %>
+    <h1 class="headers"> Booking for</h1>
+    <% end %>
     <h2 class="headers"><%= @booking.service_name %></h2>
 
 
