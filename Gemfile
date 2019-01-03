@@ -12,6 +12,7 @@ gem 'money-rails'
 gem 'stripe'
 gem "letter_opener", group: :development
 gem 'postmark-rails'
+gem 'gibbon'
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'

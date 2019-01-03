@@ -77,6 +77,9 @@ GEM
     ffi (1.9.25)
     font-awesome-sass (5.5.0.1)
       sassc (>= 1.11)
+    gibbon (3.2.0)
+      faraday (>= 0.9.1)
+      multi_json (>= 1.11.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (1.4.0)
@@ -235,6 +238,7 @@ DEPENDENCIES
   devise
   dotenv-rails
   font-awesome-sass (~> 5.5.0)
+  gibbon
   jbuilder (~> 2.0)
   letter_opener
   listen (~> 3.0.5)
