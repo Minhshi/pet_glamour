@@ -5,18 +5,13 @@ class User < ApplicationRecord
   :recoverable, :rememberable, :validatable
   has_many :bookings
 
-  # after_create :send_welcome_email
-
-  # private
-
-  # def send_welcome_email
-  #   UserMailer.welcome(self).deliver_now
-  # end
-
-   after_create :subscribe_to_newsletter
+  after_create :send_welcome_email, :subscribe_to_newsletter
 
   private
 
+  def send_welcome_email
+    UserMailer.welcome(self).deliver_now
+  end
   def subscribe_to_newsletter
     SubscribeToNewsletterService.new(self).call
   end
