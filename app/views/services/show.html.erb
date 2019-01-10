@@ -20,14 +20,11 @@
           <div class="flatpickr input-group datepicker">
 
             <a class="input-button date" title="toggle" data-toggle>
-              <!-- <i class="far fa-calendar"></i> -->
               <%= image_tag "calendar-60.svg", height: 16, width: 16 %>
             </a>
-            <input type="text" placeholder="Select Date" data-input>
-
+            <input type="text" placeholder="Select Date" id="appointment_date" data-input>
 
             <a class="input-button" title="clear" data-clear>
-              <!-- <i class="fas fa-times"></i> -->
               <%= image_tag "ic_close_48px.svg", height: 16, width: 16 %>
             </a>
           </div>
@@ -35,6 +32,7 @@
           <div class="test">
             <%= form_tag bookings_path do %>
             <%= hidden_field_tag 'service_id', @service.id %>
+            <%= hidden_field_tag 'appointment_date', @service.appointment_date %>
             <%= submit_tag 'Book now', class: 'btn btn-primary button-1' %>
             <% end %>
 
