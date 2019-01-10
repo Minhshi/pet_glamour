@@ -20,6 +20,7 @@
               <span><%= image_tag "ic_euro_symbol_48px.svg", height: 16 %> <%= humanized_money(@booking.amount) %></span>
             </label>
           </article>
+          <p><%= image_tag "ic_sentiment_neutral_48px.svg", height: 16 %> <%= @booking.booking_date %></p>
           <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-name="<%= @booking.service_name %>"
