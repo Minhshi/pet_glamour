@@ -18,14 +18,17 @@
           <p><%= image_tag "ic_euro_symbol_48px.svg", height: 16 %> <%= humanized_money(@service.price) %></p>
 
           <div class="flatpickr input-group datepicker">
+
+            <a class="input-button date" title="toggle" data-toggle>
+              <!-- <i class="far fa-calendar"></i> -->
+              <%= image_tag "calendar-60.svg", height: 16, width: 16 %>
+            </a>
             <input type="text" placeholder="Select Date" data-input>
 
-            <a class="input-button" title="toggle" data-toggle>
-              <i class="far fa-calendar"></i>
-            </a>
 
             <a class="input-button" title="clear" data-clear>
-              <i class="fas fa-times"></i>
+              <!-- <i class="fas fa-times"></i> -->
+              <%= image_tag "ic_close_48px.svg", height: 16, width: 16 %>
             </a>
           </div>
 

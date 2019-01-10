@@ -12,5 +12,9 @@
 }
 .flatpickr {
   display: flex;
-  width: 90%;
+  width: 50%;
+  align-items: center;
+}
+.date {
+  padding-right: 10px;
 }
