@@ -1,0 +1,30 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+
+      <h2 class="headers">Select Date and Time</h2>
+
+      <div class="flatpickr input-group datepicker">
+
+        <%= form_for(@service) do |f| %>
+        <%= f.text_field :appointment_date, class: "datepicker", placeholder: "Select Date", data: {input: ""} %>
+        <%= f.submit "Confirm", class: "btn btn-primary button-1 confirm-btn" %>
+        <% end %>
+
+        <a class="input-button date" title="toggle" data-toggle>
+          <%= image_tag "calendar-60.svg", height: 16, width: 16 %>
+        </a>
+
+        <!-- <input type="text" placeholder="Select Date" data-input> -->
+
+
+        <a class="input-button" title="clear" data-clear>
+          <%= image_tag "ic_close_48px.svg", height: 16, width: 16 %>
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+</div>
