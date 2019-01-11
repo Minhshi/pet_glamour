@@ -12,9 +12,19 @@
 }
 .flatpickr {
   display: flex;
-  width: 50%;
-  align-items: center;
+}
+.input-button {
+  margin-top: 6px;
+}
+.input-button.date {
+  margin-left: 10px;
 }
 .date {
   padding-right: 10px;
+}
+.datepicker {
+  margin-bottom: 24px;
+}
+.confirm-btn {
+  margin-top: 24px;
 }
