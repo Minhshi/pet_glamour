@@ -17,7 +17,7 @@
           </div>
           <p><%= image_tag "ic_euro_symbol_48px.svg", height: 16 %> <%= humanized_money(@service.price) %></p>
 
-          <div class="flatpickr input-group datepicker">
+        <!--   <div class="flatpickr input-group datepicker">
 
             <a class="input-button date" title="toggle" data-toggle>
               <%= image_tag "calendar-60.svg", height: 16, width: 16 %>
@@ -27,7 +27,18 @@
             <a class="input-button" title="clear" data-clear>
               <%= image_tag "ic_close_48px.svg", height: 16, width: 16 %>
             </a>
-          </div>
+          </div> -->
+
+          <% if @service.appointment_date.nil? %>
+          <p><%= image_tag "calendar-60.svg", height: 16 %> <%= link_to "Select Date and Time", edit_service_path(@service) %></p>
+          <% else %>
+
+          <p><%= image_tag "calendar-60.svg", height: 16 %> <%= @service.appointment_date.strftime('%B %d, %Y') %></p>
+          <% end %>
+
+
+
+
 
           <div class="test">
             <%= form_tag bookings_path do %>
