@@ -1,6 +1,6 @@
 <h1 align="center">Pet Glamour</h1>
 
-<table>
+<table width="100%">
   <tr>
     <th>Page</th>
     <th>Features</th>
