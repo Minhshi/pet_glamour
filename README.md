@@ -17,6 +17,6 @@ Content in the first column | Content in the second column
 </p>
 
 
-<h1>Pet Glamour</h1>
+<h1 align="center">Pet Glamour</h1>
 
 <img src="https://res.cloudinary.com/dmadox5xe/image/upload/c_scale,w_200/v1547500797/Pet%20Glamour/Screenshot_2019-01-14_at_22.16.48.png" alt="">
