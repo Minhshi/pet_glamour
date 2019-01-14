@@ -21,5 +21,13 @@
       </ul>
     </td>
   </tr>
+  <tr>
+    <td><img src="https://res.cloudinary.com/dmadox5xe/image/upload/c_scale,w_200/v1547502424/Pet%20Glamour/Screenshot_2019-01-14_at_22.46.50.png" alt=""></td>
+    <td>
+      <ul>
+        <li>Details of selected Grooming Service</li>
+      </ul>
+    </td>
+  </tr>
 </table>
 
