@@ -37,5 +37,36 @@
       </ul>
     </td>
   </tr>
+  <tr>
+    <td><img src="https://res.cloudinary.com/dmadox5xe/image/upload/c_scale,w_200/v1547502887/Pet%20Glamour/Screenshot_2019-01-14_at_22.53.55.png" alt=""></td>
+    <td>
+      <ul>
+        <li>Details of selected Grooming Service and Date</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="https://res.cloudinary.com/dmadox5xe/image/upload/c_scale,w_200/v1547503067/Pet%20Glamour/Screenshot_2019-01-14_at_22.57.33.png" alt=""></td>
+    <td>
+      <ul>
+        <li>Booking Details</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="https://res.cloudinary.com/dmadox5xe/image/upload/c_scale,w_200/v1547503184/Pet%20Glamour/Screenshot_2019-01-14_at_22.59.29.png" alt=""></td>
+    <td>
+      <ul>
+        <li>Payment with Stripe</li>
+      </ul>
+    </td>
+    <tr>
+    <td><img src="https://res.cloudinary.com/dmadox5xe/image/upload/c_scale,w_200/v1547503270/Pet%20Glamour/Screenshot_2019-01-14_at_23.00.58.png" alt=""></td>
+    <td>
+      <ul>
+        <li>Booking Confirmation</li>
+      </ul>
+    </td>
+  </tr>
 </table>
 
