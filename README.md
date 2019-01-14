@@ -2,8 +2,6 @@
 
 <p align="center">Book grooming services for your pet</p>
 
-<a href="pet-glamour.herokuapp.com" align="center">Visit Pet Glamour</a>
-
 <table width="100%">
   <tr>
     <th>Page</th>
