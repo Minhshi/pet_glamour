@@ -47,6 +47,14 @@
       </ul>
     </td>
   </tr>
+    <tr>
+    <td><img src="https://res.cloudinary.com/dmadox5xe/image/upload/c_scale,w_200/v1547544375/Pet%20Glamour/IMG_E5C90C8F6B42-1.jpg" alt=""></td>
+    <td>
+      <ul>
+        <li>Receive Welcome Email upon registration</li>
+      </ul>
+    </td>
+  </tr>
   <tr>
     <td><img src="https://res.cloudinary.com/dmadox5xe/image/upload/c_scale,w_200/v1547503067/Pet%20Glamour/Screenshot_2019-01-14_at_22.57.33.png" alt=""></td>
     <td>
