@@ -63,6 +63,14 @@
       </ul>
     </td>
   </tr>
+   <tr>
+    <td><img src="https://res.cloudinary.com/dmadox5xe/image/upload/c_scale,w_200/v1547545323/Pet%20Glamour/Screenshot_2019-01-15_at_10.41.48.png" alt=""></td>
+    <td>
+      <ul>
+        <li>Subscription to Mailchimp Email List</li>
+      </ul>
+    </td>
+  </tr>
   <tr>
     <td><img src="https://res.cloudinary.com/dmadox5xe/image/upload/c_scale,w_200/v1547503067/Pet%20Glamour/Screenshot_2019-01-14_at_22.57.33.png" alt=""></td>
     <td>
